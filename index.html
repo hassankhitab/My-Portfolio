@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hassan Khitab | AI Portfolio</title>
+    <meta name="description" content="Portfolio of Hassan Khitab, AI Innovator.">
+
+    <!-- Google Fonts: Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Background Animation Elements -->
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo">Hassan<span>.AI</span></a>
+            <ul class="nav-links">
+                <li><a href="#about" class="nav-link">About Me</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link btn-contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h2 class="subtitle">Hello, World! I'm</h2>
+            <h1 class="title">Hassan Khitab</h1>
+            <p class="role">
+                <span class="typing-text">Aspiring AI Innovator</span><span class="cursor">&nbsp;</span>
+            </p>
+            <p class="description">
+                Aspiring AI Innovator | CS Undergrad Specializing in AI | Machine Learning Enthusiast | Passionate About
+                Merging Creativity & Tech in AI.
+            </p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+            </div>
+            <div class="social-links">
+                <a href="#" id="github-profile-link" target="_blank" aria-label="GitHub"><i
+                        class="fab fa-github"></i></a>
+                <a href="#" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="image-wrapper">
+                <div class="ai-brain-animation">
+                    <i class="fas fa-brain"></i>
+                    <div class="nodes">
+                        <!-- CSS animated nodes will be created here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section-padding">
+        <div class="section-title-container">
+            <h2 class="section-title">About Me</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="about-content">
+            <div class="about-text glass-card">
+                <p>
+                    I am an ambitious <strong>Artificial Intelligence Student</strong> with a deep curiosity for how
+                    data shapes our understanding of the universe. My academic journey is fueled by a desire to master
+                    machine learning algorithms, deep neural networks, and natural language processing.
+                </p>
+                <p>
+                    I believe that AI is the ultimate tool for augmenting human capabilities. When I'm not coding or
+                    training models, I'm reading recent ML research papers, participating in hackathons, or contributing
+                    to open-source projects.
+                </p>
+                <div class="stats">
+                    <div class="stat-item">
+                        <h3>Education</h3>
+                        <p>Undergraduate in AI/CS</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>Interest</h3>
+                        <p>Deep Learning & NLP</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section-padding">
+        <div class="section-title-container">
+            <h2 class="section-title">My Arsenal</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="skills-container">
+            <div class="skill-category glass-card">
+                <h3><i class="fas fa-code"></i> Languages</h3>
+                <div class="skill-tags">
+                    <span>Python</span>
+                    <span>C++</span>
+                    <span>JavaScript</span>
+                    <span>R</span>
+                    <span>SQL</span>
+                </div>
+            </div>
+            <div class="skill-category glass-card">
+                <h3><i class="fas fa-network-wired"></i> Frameworks & ML</h3>
+                <div class="skill-tags">
+                    <span>TensorFlow</span>
+                    <span>PyTorch</span>
+                    <span>Scikit-Learn</span>
+                    <span>Pandas</span>
+                    <span>Keras</span>
+                    <span>OpenCV</span>
+                </div>
+            </div>
+            <div class="skill-category glass-card">
+                <h3><i class="fas fa-tools"></i> Tools</h3>
+                <div class="skill-tags">
+                    <span>Git & GitHub</span>
+                    <span>Docker</span>
+                    <span>Jupyter</span>
+                    <span>Google Colab</span>
+                    <span>Linux</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section-padding">
+        <div class="section-title-container">
+            <h2 class="section-title">Featured Projects</h2>
+            <p class="section-subtitle">Automatically fetched from my GitHub</p>
+            <div class="underline"></div>
+        </div>
+
+        <!-- Controls for GitHub fetch -->
+        <div class="github-controls" style="display: none;">
+            <input type="text" id="github-username" placeholder="Enter GitHub Username..." value="hassankhitab"
+                class="gh-input">
+            <button id="fetch-repos-btn" class="btn btn-primary sm-btn"><i class="fas fa-sync-alt"></i> Load
+                GitHub</button>
+        </div>
+
+        <div class="projects-grid" id="github-projects">
+            <!-- Projects injected via JS -->
+            <div class="loading-spinner" id="projects-loading">
+                <i class="fas fa-circle-notch fa-spin"></i> Loading projects...
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section-padding">
+        <div class="section-title-container">
+            <h2 class="section-title">Get in Touch</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="contact-container glass-card">
+            <div class="contact-info">
+                <h3>Let's talk about AI, Tech, or Opportunities!</h3>
+                <p>I'm currently looking for internships and collaborative projects. Whether you have a question or just
+                    want to say hi, I'll try my best to get back to you!</p>
+
+                <div class="contact-methods">
+                    <div class="method">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:your-selenophile7i8@gmail.com">your-selenophile7i8@gmail.com</a>
+                    </div>
+                    <div class="method">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Mansehra, KPK, Pakistan</span>
+                    </div>
+                </div>
+            </div>
+
+            <form class="contact-form" id="contact-form">
+                <div class="form-group">
+                    <input type="text" id="name" required placeholder="Your Name">
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" required placeholder="Your Email">
+                </div>
+                <div class="form-group">
+                    <textarea id="message" required placeholder="Your Message" rows="5"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-submit">Send Message <i
+                        class="fas fa-paper-plane"></i></button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Hassan Khitab. Designed with <i class="fas fa-heart text-accent"></i> & AI.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
